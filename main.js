@@ -1,6 +1,7 @@
 console.log("I'm in main JS");
 
 var outputTarget = document.getElementById('output-target');
+var textInput = document.getElementById('keypress-input');
 // H1 hover function
 document.body.addEventListener('mouseover', function(event) {
 		if (event.target.id === 'page-title') {
@@ -32,4 +33,22 @@ function printOutput(input) {
 	printString += `</div>`;
 	outputTarget.innerHTML = printString;	
 }
+
+function printOutputText(input) {
+	outputTarget.innerHTML += input;
+}
+
+//Real time typing function
+
+textInput.addEventListener('keypress', function(keypress) {
+	// console.log(keypress.key);
+	printOutputText(keypress.key);	
+});
+
+//Clear DOM function 
+document.body.addEventListener('mouseout', function(event) {
+	if (event.target.className === 'article-section') {
+		outputTarget.innerHTML = '';
+	}
+});
 
