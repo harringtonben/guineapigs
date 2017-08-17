@@ -11,3 +11,9 @@ document.body.addEventListener('mouseout', function(event) {
 			console.log('you moved out of the header');}
 });
 
+//Section click function
+
+document.body.addEventListener('click', function(event){
+	if (event.target.className === 'article-section') {
+		console.log(event.target.innerHTML);}
+});
