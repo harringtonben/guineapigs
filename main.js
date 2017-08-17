@@ -17,3 +17,6 @@ document.body.addEventListener('click', function(event){
 	if (event.target.className === 'article-section') {
 		console.log(event.target.innerHTML);}
 });
+
+//next function will go here
+
