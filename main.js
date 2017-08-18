@@ -2,6 +2,8 @@ console.log("I'm in main JS");
 
 var outputTarget = document.getElementById('output-target');
 var textInput = document.getElementById('keypress-input');
+var roundedButton = document.getElementById('add-rounding');
+var guineaPig = document.getElementById('guinea-pig');
 // H1 hover function
 document.body.addEventListener('mouseover', function(event) {
 		if (event.target.id === 'page-title') {
@@ -49,6 +51,14 @@ textInput.addEventListener('keypress', function(keypress) {
 document.body.addEventListener('mouseout', function(event) {
 	if (event.target.className === 'article-section') {
 		outputTarget.innerHTML = '';
+	}
+});
+
+//Rounded border function
+
+document.body.addEventListener('click', function(event) {
+	if (event.target.id === 'add-rounding') {
+	event.target.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.classList.add('rounded');	
 	}
 });
 

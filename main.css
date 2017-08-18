@@ -10,3 +10,14 @@ body {
 	
 }
 
+.hidden {
+	display: none;
+}
+
+#guinea-pig {
+	background-color: grey;
+}
+
+.rounded {
+	border-radius: 2px;
+}
