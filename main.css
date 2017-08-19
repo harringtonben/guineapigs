@@ -1,3 +1,50 @@
 body {
-	background-color: teal;
+	/*background-color: teal;*/
+	background-image: url('https://s7d2.scene7.com/is/image/PetSmart/4051136?$sclp-prd-main_large$');
+	background-position: left;
+	background-repeat: no-repeat;
+
+}
+
+.container {
+	width: 60%;
+	margin: auto;
+	background-color: rgba(185, 188, 191, 0.5);
+	padding: 10px;
+
+	
+}
+
+.hidden {
+	display: none;
+}
+
+#guinea-pig {
+	background-color: #fff;
+	padding: 20px;
+}
+
+.rounded {
+	border-radius: 2px;
+}
+
+.captured {
+	border: 2px solid black;
+}
+
+.hulkify {
+	font-size: 24px;
+}
+
+.colorful {
+	color: blue;
+}
+
+button {
+	display: block;
+}
+
+#output-target {
+	margin: 20px;
+	border: 2px  solid black;
 }
