@@ -62,3 +62,26 @@ document.body.addEventListener('click', function(event) {
 	}
 });
 
+//Add border function
+
+document.body.addEventListener('click', function(event) {
+	if (event.target.id === 'add-border') {
+	event.target.previousElementSibling.previousElementSibling.previousElementSibling.classList.add('captured');	
+	}
+});
+
+//Hulifky function
+
+document.body.addEventListener('click', function(event) {
+	if (event.target.id === 'make-large') {
+	event.target.previousElementSibling.previousElementSibling.classList.add('hulkify');	
+	}
+});
+
+//Add color function
+
+document.body.addEventListener('click', function(event) {
+	if (event.target.id === 'add-color') {
+	event.target.previousElementSibling.classList.add('colorful');	
+	}
+});
